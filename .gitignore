@@ -75,8 +75,7 @@ Thumbs.db
 *.zip
 *.whl
 
-# Docker
-.dockerignore
+
 
 # Node (if any frontend)
 node_modules/
