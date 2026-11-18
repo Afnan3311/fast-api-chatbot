@@ -24,8 +24,8 @@ pipeline {
                     def scannerHome = tool "${SONAR_SCANNER_TOOL}"
                     withSonarQubeEnv("${SONAR_SERVER_NAME}") {
                         sh "${scannerHome}/bin/sonar-scanner \
-                            -Dsonar.projectKey=fast-api-chatbot-key \
-                            -Dsonar.projectName='fast-api-chatbot-project' \
+                            -Dsonar.projectKey=fast-chatbot-api-key \
+                            -Dsonar.projectName='fast-chatbot-api-project' \
                             -Dsonar.sources=. \
                             -Dsonar.exclusions=*/venv/,/.venv/,/_pycache_/,/.pytest_cache/,/static/*"
                     }
