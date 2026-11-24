@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: fast-api-chatbot
-  namespace: argocd
   labels:
     app: fast-api-chatbot
 spec:
